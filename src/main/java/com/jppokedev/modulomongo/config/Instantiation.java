@@ -16,7 +16,7 @@ public class Instantiation implements CommandLineRunner{
 	private UserRepository userRepository;
 	
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... arg0) throws Exception {
 		
 		userRepository.deleteAll();
 		
@@ -26,7 +26,4 @@ public class Instantiation implements CommandLineRunner{
 		
 		userRepository.saveAll(Arrays.asList(maria, alex, bob));
 	}
-
-	
-	
 }
